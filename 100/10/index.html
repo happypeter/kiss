@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clearfix</title>
+
+	<style>
+		.clearfix:before,
+		.clearfix:after {
+		    content: " ";
+		    display: table;
+		}
+
+		.clearfix:after {
+		    clear: both;
+		}
+
+
+		.parent {
+		  background-color: #bada55;
+		  border: 3px solid red;
+		}
+		.left {
+		  width: 20%;
+		  float: left;
+		  background-color: teal;
+		  height: 50px;
+		}
+		.right {
+		  width: 80%;
+		  float: right;
+		  background-color: deeppink;
+		  height: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>问题1：父元素失去了高度</h1>
+
+	<p>解决方式：使用 clearfix</p>
+
+	<!-- http://haoduoshipin.com/v/166 -->
+
+	<div class="parent clearfix">
+	  <div class="left"></div>
+	  <div class="right">
+	    ttttt
+	  </div>
+	</div>
+</body>
+</html>
