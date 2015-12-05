@@ -21,3 +21,15 @@ ul {
 
 
 /* section */
+
+
+.hero {
+	background-color: rgb(0, 188, 212);
+}
+
+.hero h1 {
+	line-height: 160px;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
