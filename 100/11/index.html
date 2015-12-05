@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow transition</title>
+	<style>
+		.parent {
+		  width: 500px;
+		  margin: 0 auto;
+		  height: 100px;
+		  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		  transition: all 1s ease ;
+		}
+
+		.parent:hover {
+		  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+		}	
+	</style>
+</head>
+<body>
+
+	<h1>box-shadow & transition</h1>
+	<div class="parent">
+
+	</div>
+
+	
+</body>
+</html>
