@@ -20,6 +20,17 @@ ul {
 }
 
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
 /* section */
 
 
@@ -32,4 +43,16 @@ ul {
 	font-weight: normal;
 	color: #fff;
 	text-align: center;
+}
+
+
+.toc {
+	border: 3px solid red;
+	width: 960px;
+	margin: 20px auto;
+}
+
+.toc li {
+	border: 2px solid green;
+	margin-bottom: 20px;
 }
