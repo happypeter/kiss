@@ -47,12 +47,55 @@ ul {
 
 
 .toc {
-	border: 3px solid red;
+	/*border: 3px solid red;*/
 	width: 960px;
 	margin: 20px auto;
 }
 
 .toc li {
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 	margin-bottom: 20px;
+}
+
+li a {
+	display: block;
+	/*border: 1px solid red;*/
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 1s ease;
+    color: #212121;
+}
+
+li a:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
+
+
+.toc a .id {
+	height: 96px;
+	background-color: rgb(0, 188, 212);
+	width: 48px;
+	float: left;
+	color: white;
+	line-height: 96px;
+	text-align: center;
+}
+.toc a .detail {
+	height: 96px;
+	width: 910px;
+	float: right;
+	padding-left: 10px;
+}
+
+.toc a .detail .title {
+	font-size: 1.7rem;
+	line-height: 1.8;
+}
+
+.toc a .detail .date {
+	opacity: .8;
 }
