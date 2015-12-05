@@ -33,6 +33,23 @@
 		  height: 50px;
 		}
 
+
+
+       /* 下面的内容是问题二了*/
+
+
+
+		.parent2 {
+		  background-color: #000;
+		}
+
+		.child {
+		  height: 60px;
+		  background-color: teal;
+		  width: 50%;
+		  margin-top: 50px;
+		}
+
 	</style>
 </head>
 <body>
@@ -53,6 +70,11 @@
 	<h3>问题2：margin-top/bottom 失灵</h3>
 
 	<p>解决方式：给父元素使用 clearfix</p>
+
+
+	<div class="parent2 clearfix">
+	  <div class="child"></div>
+	</div>
 
 </body>
 </html>
