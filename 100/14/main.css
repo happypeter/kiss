@@ -28,4 +28,23 @@ header {
 
 .first {
 	height: 150px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.first h1 {
+	color: #fff;
+}
+
+.first p {
+	color: #fff;
+	opacity: .8;
+}
+
+.second {
+	padding: 30px;
+	text-align: center;
+}
+.second p {
+	opacity: .8;
 }
