@@ -1,4 +1,4 @@
-.first, .second {
+.first, .second, .third {
 	color: #fff;
 	line-height: 120px;
 	text-align: center;
@@ -8,9 +8,8 @@
 .first {
 	height: 120px;
   	background-color: #00BCD4;
-  	margin-bottom: 20px;
 }
-@media (min-width: 700px){
+@media (min-width: 500px){
 	.first{
 		float:left;
 		width: 50%;
@@ -20,9 +19,31 @@
 	height: 120px;
 	background-color: deeppink;
 }
-@media (min-width: 700px){
+@media (min-width: 500px){
 	.second{
-		float: right;
+		float: left;
 		width: 50%;
+	}
+}
+
+.third {
+	height: 120px;
+	background-color: lightseagreen;
+}
+
+
+@media (min-width: 500px){
+	.third{
+		clear: both;
+	}
+}
+
+@media (min-width: 800px) {
+	.third {
+		float: left;
+		clear: none;
+	}
+	.first, .second, .third {
+		width: 33.333333%;
 	}
 }
