@@ -1,0 +1,16 @@
+.first, .second {
+	color: #fff;
+	line-height: 120px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.first {
+	height: 120px;
+  	background-color: #00BCD4;
+  	margin-bottom: 20px;
+}
+.second {
+	height: 120px;
+	background-color: deeppink;
+}
