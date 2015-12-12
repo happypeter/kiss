@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>responsive</title>
+	<style>
+		.nav-bar {
+			background-color: lightseagreen;
+			height: 50px;
+			width: 100px;
+			float: right;
+			display: none;
+		}
+		.hamburger-btn {
+			background-color: deeppink;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+		}
+		@media (min-width: 500px) {
+			.hamburger-btn {
+				display: none;
+			}
+			.nav-bar {
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="nav-bar"></div>
+	<div class="hamburger-btn"></div>
+	
+</body>
+</html>
