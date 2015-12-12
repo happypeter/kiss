@@ -99,3 +99,9 @@ li a:hover {
 .toc a .detail .date {
 	opacity: .8;
 }
+
+footer {
+	margin-top: 80px;
+	height: 100px;
+	background-color: #212121;
+}
