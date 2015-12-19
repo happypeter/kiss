@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	
+	
+	<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+	.box {
+	  width: 100px;
+	  height: 100px;
+	  background-color: teal;
+	  transition: all 1s .1s;
+	}
+
+	.box.move {
+	  transform: translateX(100px)
+	}
+	</style>
+</head>
+<body>
+	
+	
+	<div class="box"></div>
+
+	<style>
+	$('.box').click(function(){
+	  $(this).toggleClass('move');
+	})
+	</style>
+</body>
+</html>
