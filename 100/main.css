@@ -48,8 +48,7 @@ ul {
 
 .toc {
 	/*border: 3px solid red;*/
-	width: 960px;
-	margin: 20px auto;
+	margin: 20px 10px;
 }
 
 .toc li {
@@ -78,7 +77,7 @@ li a:hover {
 .toc a .id {
 	height: 96px;
 	background-color: rgb(0, 188, 212);
-	width: 48px;
+	width: 20%;
 	float: left;
 	color: white;
 	line-height: 96px;
@@ -86,8 +85,9 @@ li a:hover {
 }
 .toc a .detail {
 	height: 96px;
-	width: 910px;
-	float: right;
+	width: 80%;
+	overflow: hidden;
+	float: left;
 	padding-left: 10px;
 }
 
