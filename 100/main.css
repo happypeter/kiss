@@ -33,6 +33,27 @@ ul {
 
 /* section */
 
+a.hamburger {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .6s;
+}
+a.hamburger i {
+  line-height: 40px;
+}
+
+a.hamburger:hover {
+  background-color: rgba(255,255,255, .3);
+}
+
+
 
 .hero {
 	background-color: rgb(0, 188, 212);
