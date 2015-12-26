@@ -5,6 +5,7 @@
   <title>100</title>
   <link rel="stylesheet" href="main.css">
   <meta name="viewport" content="width=device-width">
+  <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
   <link rel="stylesheet" href="23/css/font-awesome.min.css">
 </head>
 <body>
@@ -12,6 +13,13 @@
   <a class="hamburger">
     <i class="icon-reorder"></i>
   </a>
+
+  <div class="sidebar">
+    sidebar
+  </div>
+
+  <div class="ui-mask"></div>
+
   <div class="hero clearfix">
     <h1>百日百页面</h1>
   </div>
@@ -301,5 +309,16 @@
   </li>
 </ul>
 <footer></footer>
+  <script>
+    $('.hamburger').click(function(){
+      $('.sidebar').addClass('show');
+      $('.ui-mask').addClass('show');
+    })
+
+    $('.ui-mask').click(function(){
+      $('.sidebar').removeClass('show');
+      $(this).removeClass('show');
+    })
+  </script>
 </body>
 </html>

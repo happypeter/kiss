@@ -34,25 +34,61 @@ ul {
 /* section */
 
 a.hamburger {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	font-size: 21px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color .6s;
-}
-a.hamburger i {
-  line-height: 40px;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	transition: background-color .5s;
+	cursor: pointer;
 }
 
 a.hamburger:hover {
-  background-color: rgba(255,255,255, .3);
+	background-color: rgba(255, 255, 255, .3);
 }
 
+a.hamburger i {
+	font-size: 20px;
+	color: white;
+}
+
+/* sidebar */
+
+.sidebar {
+	width: 250px;
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	transform: translateX(-250px);
+	transition: transform .5s;
+}
+
+.sidebar.show {
+	transform: translateX(0);
+	
+}
+
+.ui-mask {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  position: fixed;
+  display: none;
+}
+
+.ui-mask.show {
+	display: block;
+}
 
 
 .hero {
